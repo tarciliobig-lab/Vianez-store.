@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Vianez Store</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Vianez Store</div>
+        <nav>
+            <ul>
+                <li data-tab="home">Home</li>
+                <li data-tab="produtos">Produtos</li>
+                <li data-tab="contatos">Contatos</li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+    <section id="home" class="tab-content active">
+        <canvas id="particles-canvas"></canvas>
+        <div class="list">
+            <div class="item active">
+                <div class="product-img">
+                    <img src="./img/img/iphone-17-pro-apple-removebg-preview.png" alt="iPhone 17">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">iPhone 17 Pro Max</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./img/img/apple-watch.png" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Apple Watch</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./img/img/Airpods.avif" alt="Air Pods">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Air Pods Pro</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="tab-content">
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="product-img">
+                    <img src="./img/img/iphone-17-pro-apple-removebg-preview.png" alt="iPhone 17 Pro Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">iPhone 17 Pro Max</p>
+                </div>
+            </div>
+            <div class="produto-card">
+                <div class="product-img">
+                    <img src="./img/img/apple-watch.png" alt="Apple Watch Series 8">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Apple Watch</p>
+                </div>
+            </div>
+            <div class="produto-card">
+                <div class="product-img">
+                    <img src="./img/img/Airpods.avif" alt="Air Pods Pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Air Pods Pro</p>
+                </div>
+            </div>
+        </div>
+        <div style="height: 80px;"></div>
+        <button class="btn fazer-pedidos" id="fazerPedidos">Fazer Pedidos</button>
+    </section>
+
+    <section id="contatos" class="tab-content">
+        <div class="contato-form">
+            <h2>Entre em Contato</h2>
+            <p>📧 <strong>vianezstartup@gmail.com</strong></p>
+            <p>📱 <strong><a href="https://wa.me/55739994933457" target="_blank">(73) 99949-33457</a></strong></p>
+            <form class="contact-form">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn enviar-email">Enviar Email</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+    <script src="./particles.js"></script>
+    <script src="./full-texts.js"></script>
+    <script src="./carousel.js"></script>
+</body>
+</html>
+
